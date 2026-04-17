@@ -179,14 +179,14 @@ export default {
       const change = forecast.forecasted_demand - forecast.current_demand
       const changePercent = Math.abs((change / forecast.current_demand) * 100)
 
-      // If change is within ±2%, consider it stable and show blue
+      // If change is within ±2%, consider it stable and show indigo
       if (changePercent <= 2) {
-        return '#3b82f6' // Blue for stable
+        return '#6366f1' // Indigo for stable
       }
 
       if (change > 0) return '#10b981' // Green for increasing
       if (change < 0) return '#ef4444' // Red for decreasing
-      return '#3b82f6' // Blue for no change
+      return '#6366f1' // Indigo for no change
     }
 
     const translatePeriod = (period) => {
@@ -234,7 +234,7 @@ export default {
 .trend-card {
   background: white;
   border: 1px solid #e2e8f0;
-  border-radius: 10px;
+  border-radius: 12px;
   padding: 1.5rem;
   transition: all 0.2s ease;
 }
@@ -248,7 +248,7 @@ export default {
 }
 
 .stable-card {
-  border-left: 4px solid #3b82f6;
+  border-left: 4px solid #6366f1;
 }
 
 .decreasing-card {
@@ -282,8 +282,8 @@ export default {
 }
 
 .stable-card .trend-icon {
-  background: #dbeafe;
-  color: #2563eb;
+  background: #e0e7ff;
+  color: #6366f1;
 }
 
 .decreasing-card .trend-icon {
@@ -348,7 +348,7 @@ export default {
 }
 
 .stable-card .item-change {
-  color: #3b82f6;
+  color: #6366f1;
 }
 
 .decreasing-card .item-change {

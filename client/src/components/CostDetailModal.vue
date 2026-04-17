@@ -166,7 +166,7 @@ const close = () => {
 
 .modal-container {
   background: white;
-  border-radius: 12px;
+  border-radius: 14px;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
   max-width: 600px;
   width: 100%;
@@ -226,7 +226,7 @@ const close = () => {
 }
 
 .summary-card.total {
-  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+  background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
   color: white;
 }
 
@@ -257,8 +257,8 @@ const close = () => {
 }
 
 .cost-item.procurement {
-  border-color: #93c5fd;
-  background: #eff6ff;
+  border-color: #c7d2fe;
+  background: #eef2ff;
 }
 
 .cost-item.operational {
@@ -294,7 +294,7 @@ const close = () => {
 }
 
 .cost-item.procurement .cost-icon {
-  background: #3b82f6;
+  background: #6366f1;
   color: white;
 }
 

@@ -536,7 +536,7 @@ export default {
   border-radius: 3px;
 }
 
-.legend-dot.procurement { background: #3b82f6; }
+.legend-dot.procurement { background: #6366f1; }
 .legend-dot.operational { background: #8b5cf6; }
 .legend-dot.labor { background: #10b981; }
 .legend-dot.overhead { background: #f59e0b; }
@@ -559,7 +559,7 @@ export default {
 }
 
 .profit-card {
-  border-left: 4px solid #3b82f6;
+  border-left: 4px solid #6366f1;
 }
 
 .stat-meta {
@@ -676,7 +676,7 @@ export default {
   border-radius: 6px 6px 0 0;
 }
 
-.bar-segment.procurement { background: #3b82f6; }
+.bar-segment.procurement { background: #6366f1; }
 .bar-segment.operational { background: #8b5cf6; }
 .bar-segment.labor { background: #10b981; }
 .bar-segment.overhead { background: #f59e0b; }
@@ -723,7 +723,7 @@ export default {
 
 .category-amount {
   font-weight: 700;
-  color: #2563eb;
+  color: #4f46e5;
   font-size: 1.125rem;
 }
 
@@ -737,7 +737,7 @@ export default {
 
 .category-bar {
   height: 100%;
-  background: linear-gradient(90deg, #3b82f6 0%, #2563eb 100%);
+  background: linear-gradient(90deg, #6366f1 0%, #4f46e5 100%);
   border-radius: 4px;
   transition: width 0.6s ease;
 }
@@ -817,7 +817,7 @@ export default {
 }
 
 .transactions-table tbody tr.clickable-row:hover {
-  background: #eff6ff;
+  background: #eef2ff;
 }
 
 .transaction-id {

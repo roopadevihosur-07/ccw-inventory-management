@@ -191,7 +191,7 @@ const getSummaryCardClass = () => {
 
 .modal-container {
   background: white;
-  border-radius: 12px;
+  border-radius: 14px;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
   max-width: 700px;
   width: 100%;
@@ -329,8 +329,8 @@ const getSummaryCardClass = () => {
 }
 
 .summary-card.primary {
-  border-color: #bfdbfe;
-  background: #eff6ff;
+  border-color: #c7d2fe;
+  background: #eef2ff;
 }
 
 .summary-card.success-card {
@@ -397,7 +397,7 @@ const getSummaryCardClass = () => {
 
 .info-value.total-value {
   font-size: 1.125rem;
-  color: #2563eb;
+  color: #4f46e5;
   font-weight: 700;
 }
 
