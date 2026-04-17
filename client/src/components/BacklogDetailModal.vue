@@ -140,7 +140,7 @@ const formatDate = (dateString) => {
 
 .modal-container {
   background: white;
-  border-radius: 12px;
+  border-radius: 14px;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
   max-width: 700px;
   width: 100%;
@@ -249,8 +249,8 @@ const formatDate = (dateString) => {
 }
 
 .priority-badge.low {
-  background: #dbeafe;
-  color: #1e40af;
+  background: #e0e7ff;
+  color: #3730a3;
 }
 
 .shortage-summary {
@@ -328,7 +328,7 @@ const formatDate = (dateString) => {
 .info-value.order-id,
 .info-value.sku {
   font-family: 'Monaco', 'Courier New', monospace;
-  color: #2563eb;
+  color: #4f46e5;
 }
 
 .modal-footer {

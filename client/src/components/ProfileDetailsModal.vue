@@ -113,7 +113,7 @@ const formatDate = (dateString) => {
 
 .modal-container {
   background: white;
-  border-radius: 12px;
+  border-radius: 14px;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
   max-width: 600px;
   width: 100%;
@@ -181,7 +181,7 @@ const formatDate = (dateString) => {
   width: 96px;
   height: 96px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+  background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
   color: white;
   display: flex;
   align-items: center;
@@ -189,7 +189,7 @@ const formatDate = (dateString) => {
   font-weight: 700;
   font-size: 2rem;
   letter-spacing: 0.025em;
-  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2);
 }
 
 .profile-name {

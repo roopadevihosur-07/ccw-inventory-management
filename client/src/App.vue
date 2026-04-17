@@ -169,7 +169,7 @@ export default {
 }
 
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
   background: #f8fafc;
   color: #1e293b;
   -webkit-font-smoothing: antialiased;
@@ -185,7 +185,7 @@ body {
 .top-nav {
   background: #ffffff;
   border-bottom: 1px solid #e2e8f0;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.04);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -197,7 +197,7 @@ body {
   display: flex;
   align-items: center;
   padding: 0 2rem;
-  height: 70px;
+  height: 64px;
 }
 
 .nav-container > .nav-tabs {
@@ -216,34 +216,34 @@ body {
 }
 
 .logo h1 {
-  font-size: 1.375rem;
-  font-weight: 700;
-  color: #0f172a;
-  letter-spacing: -0.025em;
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #4f46e5;
+  letter-spacing: -0.04em;
 }
 
 .subtitle {
-  font-size: 0.813rem;
-  color: #64748b;
-  font-weight: 400;
+  font-size: 0.75rem;
+  color: #94a3b8;
+  font-weight: 500;
   padding-left: 0.75rem;
   border-left: 1px solid #e2e8f0;
+  letter-spacing: 0.02em;
 }
 
 .nav-tabs {
   display: flex;
-  gap: 0.25rem;
+  gap: 0.125rem;
 }
 
 .nav-tabs a {
-  padding: 0.625rem 1.25rem;
+  padding: 0.5rem 1rem;
   color: #64748b;
   text-decoration: none;
   font-weight: 500;
-  font-size: 0.938rem;
-  border-radius: 6px;
-  transition: all 0.2s ease;
-  position: relative;
+  font-size: 0.875rem;
+  border-radius: 8px;
+  transition: all 0.15s ease;
 }
 
 .nav-tabs a:hover {
@@ -252,18 +252,9 @@ body {
 }
 
 .nav-tabs a.active {
-  color: #2563eb;
-  background: #eff6ff;
-}
-
-.nav-tabs a.active::after {
-  content: '';
-  position: absolute;
-  bottom: -1px;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background: #2563eb;
+  color: #4f46e5;
+  background: #eef2ff;
+  font-weight: 600;
 }
 
 .main-content {
@@ -271,11 +262,11 @@ body {
   max-width: 1600px;
   width: 100%;
   margin: 0 auto;
-  padding: 1.5rem 2rem;
+  padding: 1.75rem 2rem;
 }
 
 .page-header {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.75rem;
 }
 
 .page-header h2 {
@@ -283,52 +274,53 @@ body {
   font-weight: 700;
   color: #0f172a;
   margin-bottom: 0.375rem;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.03em;
 }
 
 .page-header p {
   color: #64748b;
-  font-size: 0.938rem;
+  font-size: 0.875rem;
 }
 
 .stats-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
   margin-bottom: 1.5rem;
 }
 
 .stat-card {
   background: white;
-  padding: 1.25rem;
-  border-radius: 10px;
+  padding: 1.25rem 1.5rem;
+  border-radius: 12px;
   border: 1px solid #e2e8f0;
   transition: all 0.2s ease;
 }
 
 .stat-card:hover {
-  border-color: #cbd5e1;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  border-color: #c7d2fe;
+  box-shadow: 0 4px 16px rgba(99, 102, 241, 0.08);
 }
 
 .stat-label {
   color: #64748b;
-  font-size: 0.875rem;
-  font-weight: 600;
+  font-size: 0.75rem;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.06em;
   margin-bottom: 0.625rem;
 }
 
 .stat-value {
   font-size: 2.25rem;
-  font-weight: 700;
+  font-weight: 800;
   color: #0f172a;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.04em;
+  line-height: 1;
 }
 
 .stat-card.warning .stat-value {
-  color: #ea580c;
+  color: #d97706;
 }
 
 .stat-card.success .stat-value {
@@ -340,12 +332,12 @@ body {
 }
 
 .stat-card.info .stat-value {
-  color: #2563eb;
+  color: #4f46e5;
 }
 
 .card {
   background: white;
-  border-radius: 10px;
+  border-radius: 12px;
   padding: 1.25rem;
   border: 1px solid #e2e8f0;
   margin-bottom: 1.25rem;
@@ -357,14 +349,14 @@ body {
   align-items: center;
   margin-bottom: 1rem;
   padding-bottom: 0.875rem;
-  border-bottom: 1px solid #e2e8f0;
+  border-bottom: 1px solid #f1f5f9;
 }
 
 .card-title {
-  font-size: 1.125rem;
-  font-weight: 700;
+  font-size: 1rem;
+  font-weight: 600;
   color: #0f172a;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.01em;
 }
 
 .table-container {
@@ -384,37 +376,37 @@ thead {
 
 th {
   text-align: left;
-  padding: 0.5rem 0.75rem;
-  font-weight: 600;
-  color: #475569;
-  font-size: 0.75rem;
+  padding: 0.625rem 0.875rem;
+  font-weight: 700;
+  color: #64748b;
+  font-size: 0.7rem;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.07em;
 }
 
 td {
-  padding: 0.5rem 0.75rem;
+  padding: 0.625rem 0.875rem;
   border-top: 1px solid #f1f5f9;
   color: #334155;
   font-size: 0.875rem;
 }
 
 tbody tr {
-  transition: background-color 0.15s ease;
+  transition: background-color 0.12s ease;
 }
 
 tbody tr:hover {
-  background: #f8fafc;
+  background: #fafafa;
 }
 
 .badge {
   display: inline-block;
-  padding: 0.313rem 0.75rem;
+  padding: 0.25rem 0.625rem;
   border-radius: 6px;
-  font-size: 0.75rem;
-  font-weight: 600;
+  font-size: 0.7rem;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.025em;
+  letter-spacing: 0.04em;
 }
 
 .badge.success {
@@ -423,18 +415,18 @@ tbody tr:hover {
 }
 
 .badge.warning {
-  background: #fed7aa;
+  background: #fef3c7;
   color: #92400e;
 }
 
 .badge.danger {
-  background: #fecaca;
+  background: #fee2e2;
   color: #991b1b;
 }
 
 .badge.info {
-  background: #dbeafe;
-  color: #1e40af;
+  background: #e0e7ff;
+  color: #3730a3;
 }
 
 .badge.increasing {
@@ -443,7 +435,7 @@ tbody tr:hover {
 }
 
 .badge.decreasing {
-  background: #fecaca;
+  background: #fee2e2;
   color: #991b1b;
 }
 
@@ -453,25 +445,26 @@ tbody tr:hover {
 }
 
 .badge.high {
-  background: #fecaca;
+  background: #fee2e2;
   color: #991b1b;
 }
 
 .badge.medium {
-  background: #fed7aa;
+  background: #fef3c7;
   color: #92400e;
 }
 
 .badge.low {
-  background: #dbeafe;
-  color: #1e40af;
+  background: #e0e7ff;
+  color: #3730a3;
 }
 
 .loading {
   text-align: center;
   padding: 3rem;
-  color: #64748b;
-  font-size: 0.938rem;
+  color: #94a3b8;
+  font-size: 0.875rem;
+  letter-spacing: 0.01em;
 }
 
 .error {
@@ -479,8 +472,8 @@ tbody tr:hover {
   border: 1px solid #fecaca;
   color: #991b1b;
   padding: 1rem;
-  border-radius: 8px;
+  border-radius: 10px;
   margin: 1rem 0;
-  font-size: 0.938rem;
+  font-size: 0.875rem;
 }
 </style>

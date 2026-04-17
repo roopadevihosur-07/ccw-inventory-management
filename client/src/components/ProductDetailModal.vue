@@ -147,7 +147,7 @@ const getStockBadgeClass = (stockLevel) => {
 
 .modal-container {
   background: white;
-  border-radius: 12px;
+  border-radius: 14px;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
   max-width: 700px;
   width: 100%;
@@ -208,7 +208,7 @@ const getStockBadgeClass = (stockLevel) => {
 .product-icon {
   width: 64px;
   height: 64px;
-  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+  background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
   border-radius: 12px;
   display: flex;
   align-items: center;

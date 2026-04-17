@@ -102,8 +102,8 @@ export default {
 
 <style scoped>
 .filters-bar {
-  background: #f8fafc;
-  border-bottom: 1px solid #e2e8f0;
+  background: white;
+  box-shadow: 0 1px 0 #e2e8f0;
   padding: 0.75rem 0;
   position: sticky;
   top: 70px;
@@ -158,8 +158,8 @@ export default {
 
 .filter-select:focus {
   outline: none;
-  border-color: #3b82f6;
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
 }
 
 .reset-filters-btn {
@@ -177,7 +177,7 @@ export default {
 }
 
 .reset-filters-btn:hover:not(:disabled) {
-  background: #f8fafc;
+  background: #f1f5f9;
   border-color: #cbd5e1;
   color: #0f172a;
 }

@@ -89,7 +89,7 @@
                   <circle cx="100" cy="100" r="65" fill="none" stroke="#10b981" stroke-width="25"
                     :stroke-dasharray="`${getCircleSegment(statusData.delivered)} 408`"
                     stroke-dashoffset="0" transform="rotate(-90 100 100)"/>
-                  <circle cx="100" cy="100" r="65" fill="none" stroke="#3b82f6" stroke-width="25"
+                  <circle cx="100" cy="100" r="65" fill="none" stroke="#6366f1" stroke-width="25"
                     :stroke-dasharray="`${getCircleSegment(statusData.shipped)} 408`"
                     :stroke-dashoffset="`-${getCircleSegment(statusData.delivered)}`"
                     transform="rotate(-90 100 100)"/>
@@ -106,7 +106,7 @@
                 </svg>
                 <div class="donut-legend-compact">
                   <div class="legend-item-compact"><span class="legend-dot" style="background: #10b981"></span>{{ t('status.delivered') }}</div>
-                  <div class="legend-item-compact"><span class="legend-dot" style="background: #3b82f6"></span>{{ t('status.shipped') }}</div>
+                  <div class="legend-item-compact"><span class="legend-dot" style="background: #6366f1"></span>{{ t('status.shipped') }}</div>
                   <div class="legend-item-compact"><span class="legend-dot" style="background: #f59e0b"></span>{{ t('status.processing') }}</div>
                   <div class="legend-item-compact"><span class="legend-dot" style="background: #ef4444"></span>{{ t('status.backordered') }}</div>
                 </div>
@@ -746,7 +746,7 @@ export default {
 .section-title {
   font-size: 1rem;
   font-weight: 600;
-  color: #475569;
+  color: #64748b;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   margin-bottom: 1rem;
@@ -761,7 +761,7 @@ export default {
 .kpi-card {
   background: white;
   border: 1px solid #e2e8f0;
-  border-radius: 10px;
+  border-radius: 12px;
   padding: 1rem;
 }
 
@@ -774,12 +774,12 @@ export default {
   font-weight: 600;
   color: #64748b;
   text-transform: uppercase;
-  letter-spacing: 0.025em;
+  letter-spacing: 0.06em;
 }
 
 .kpi-value {
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 800;
   color: #0f172a;
   margin-bottom: 0.5rem;
   letter-spacing: -0.025em;
@@ -801,7 +801,7 @@ export default {
 
 .kpi-progress {
   height: 100%;
-  background: #3b82f6;
+  background: #6366f1;
   border-radius: 3px;
   transition: width 0.6s ease;
 }
@@ -1044,11 +1044,11 @@ export default {
   width: 100%;
   max-width: 60px;
   min-height: 8px;
-  background: #3b82f6;
+  background: #6366f1;
   border-radius: 6px 6px 0 0;
   transition: all 0.3s ease;
   cursor: pointer;
-  box-shadow: 0 2px 4px rgba(59, 130, 246, 0.3);
+  box-shadow: 0 2px 4px rgba(99, 102, 241, 0.3);
 }
 
 .line-bar.empty-bar {
@@ -1058,7 +1058,7 @@ export default {
 }
 
 .line-bar:hover {
-  background: #2563eb;
+  background: #4f46e5;
   transform: scaleY(1.05);
 }
 
@@ -1109,7 +1109,7 @@ export default {
 }
 
 .clickable-row:hover {
-  background: #eff6ff !important;
+  background: #eef2ff !important;
 }
 
 /* Tasks Card Styles */
@@ -1138,12 +1138,12 @@ export default {
 
 .task-input:focus {
   outline: none;
-  border-color: #667eea;
+  border-color: #6366f1;
 }
 
 .task-add-btn {
   padding: 0.75rem 1.5rem;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #6366f1;
   color: white;
   border: none;
   border-radius: 8px;
@@ -1203,7 +1203,7 @@ export default {
   width: 20px;
   height: 20px;
   cursor: pointer;
-  accent-color: #667eea;
+  accent-color: #6366f1;
 }
 
 .task-text {
@@ -1248,14 +1248,14 @@ export default {
 }
 
 .po-button.create {
-  background: #3b82f6;
+  background: #6366f1;
   color: white;
 }
 
 .po-button.create:hover {
-  background: #2563eb;
+  background: #4f46e5;
   transform: translateY(-1px);
-  box-shadow: 0 2px 4px rgba(59, 130, 246, 0.3);
+  box-shadow: 0 2px 4px rgba(99, 102, 241, 0.3);
 }
 
 .po-button.view {

@@ -388,7 +388,8 @@ label {
 .task-input:focus,
 .task-select:focus {
   outline: none;
-  border-color: #667eea;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
 }
 
 .task-select {
@@ -398,19 +399,19 @@ label {
 
 .task-add-btn {
   padding: 0.75rem 1.75rem;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #6366f1;
   color: white;
   border: none;
   border-radius: 8px;
   font-weight: 600;
   cursor: pointer;
-  transition: transform 0.2s ease, opacity 0.2s ease;
+  transition: background 0.2s ease, opacity 0.2s ease;
   white-space: nowrap;
   height: fit-content;
 }
 
 .task-add-btn:hover:not(:disabled) {
-  transform: translateY(-2px);
+  background: #4f46e5;
 }
 
 .task-add-btn:disabled {
@@ -441,7 +442,7 @@ label {
 .task-item {
   background: white;
   border: 2px solid #e2e8f0;
-  border-radius: 10px;
+  border-radius: 12px;
   padding: 1rem 1.25rem;
   transition: all 0.2s ease;
 }
@@ -460,7 +461,7 @@ label {
 }
 
 .task-item.priority-low {
-  border-left: 4px solid #2563eb;
+  border-left: 4px solid #6366f1;
 }
 
 .task-item.completed {
@@ -486,7 +487,7 @@ label {
   width: 20px;
   height: 20px;
   cursor: pointer;
-  accent-color: #667eea;
+  accent-color: #6366f1;
   flex-shrink: 0;
 }
 
@@ -554,8 +555,8 @@ label {
 }
 
 .priority-badge.low {
-  background: #dbeafe;
-  color: #1e40af;
+  background: #e0e7ff;
+  color: #4f46e5;
 }
 
 .task-due-date {
@@ -589,8 +590,8 @@ label {
 }
 
 .status-badge.upcoming {
-  background: #dbeafe;
-  color: #1e40af;
+  background: #e0e7ff;
+  color: #4f46e5;
 }
 
 .status-badge.completed {
